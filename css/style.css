@@ -1,0 +1,365 @@
+/* dark mode */
+
+/*** https://www.youtube.com/watch?v=6Wu7J_2W4dw ***/
+
+/*** https://www.alura.com.br/curso-online-otimizacao-performance-web ***/
+
+/***
+ - Extenções CSS - https://www.youtube.com/watch?v=U4XJUkslk74
+ ---https://youtu.be/U4XJUkslk74---
+ ---https://youtu.be/U4XJUkslk74--- emment
+
+-->HTML CSS support
+-->
+***/
+
+* {
+	/* border: 1px solid red; */
+	align-items: center;
+}
+
+/*** SVG responsive ***/
+
+#imgRelogio svg {
+	width: 30%;
+	height: 30%;
+}
+
+
+
+/*** End SVG responsive ***/
+
+#dateNumber {
+	margin-right: 200px;
+}
+
+#date {
+	transition: 2s;
+	transition-delay: 1s;
+}
+
+.nav {
+	flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+/* .d-flex {
+    display: flex!important;
+    align-items: baseline !important;
+} */
+
+
+#tabs {
+	margin-top: 10px;
+}
+
+/* buttons */
+
+button:hover {
+	background-color: rgb(207, 207, 207);
+	opacity: 80%;
+}
+
+button {
+	border-radius: 8px;
+	padding: 2px 5px 2px 5px;
+	margin: 2px 5px 10px 5px;
+	transition: 2s;
+	transition-delay: 1s;
+}
+/* .card{
+	flex-direction: row !important;
+} */
+
+
+/*** End Buttons ***/
+
+/*** - resposive card - ***/
+
+[class*="col-"] {
+	width: 33, 33%;
+}
+
+@media only screen and (max-width: 1024px) {
+	/* For desktop: */
+	.col-1 {
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%;
+	}
+	/** Em uso **/
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+	#imgRelogio svg {
+		width: 50%;
+		height: 50%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* For desktop: */
+	.col-1 {
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%;
+	}
+	/** Em uso **/
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+	#imgRelogio svg {
+		width: 50%;
+		height: 50%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/* for tablets */
+	.col-1 {
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 100%;
+	}
+	/** Em uso **/
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+	#imgRelogio svg {
+		width: 80%;
+		height: 80%;
+	}
+	.modal-content {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	/* for tablets */
+	.col-1 {
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 100%;
+	}
+	/** Em uso **/
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+	#imgRelogio svg {
+		width: 80%;
+		height: 80%;
+	}
+	.modal-content {
+		width: 68%;
+	}
+	table {
+		width: 70%;
+	}
+}
+
+/*** Aumentar img dos cards ***/
+
+.col-4 {
+	overflow: hidden;
+}
+
+.col-4 img {
+	width: 100%;
+	height: 100%;
+	-webkit-filter: grayscale(100%);
+	-webkit-transition: -webkit-transform .5s ease;
+	transition: transform .5s ease;
+}
+
+.col-4:hover img {
+	-webkit-filter: grayscale(0%);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*** Fim Aumentar img dos cards ***/
+
+/*
+PreLoader
+*/
+
+body {
+    overflow: hidden; 
+  }
+   
+  /* ini: Preloader */
+   
+  #preloader {
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      background-color:#ffffff; /* cor do background que vai ocupar o body */
+      z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+  }
+  #preloader .inner {
+      position: absolute;
+      top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+      left: 50%;
+      transform: translate(-50%, -50%);  
+  }
+  .bolas > div {
+    display: inline-block;
+    background-color: rgb(104, 104, 104);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 3px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: animarBola;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+     
+  }
+  .bolas > div:nth-child(1) {
+      animation-duration:0.75s ;
+      animation-delay: 0;
+  }
+  .bolas > div:nth-child(2) {
+      animation-duration: 0.75s ;
+      animation-delay: 0.12s;
+  }
+  .bolas > div:nth-child(3) {
+      animation-duration: 0.75s  ;
+      animation-delay: 0.24s;
+  }
+   
+  @keyframes animarBola {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+    16% {
+      -webkit-transform: scale(0.1);
+      transform: scale(0.1);
+      opacity: 0.7;
+    }
+    33% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1; 
+    } 
+  }
+  /* end: Preloader */
+  
