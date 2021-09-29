@@ -623,7 +623,7 @@ function creatGender() {
        })
 
        location.reload();
-       alert('Agendado!');
+    //    alert('Agendado!');
    
 };
 
