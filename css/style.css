@@ -25,7 +25,10 @@
 	height: 30%;
 }
 
-
+.card, button:hover{
+	transition-delay: 0,8s;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
 
 /*** End SVG responsive ***/
 

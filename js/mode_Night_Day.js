@@ -503,7 +503,7 @@ function addClienteATela(informacao, id) {
      div_link.setAttribute('target', "_blank");
      div_col_sm.appendChild(div_link);
 
-     let butLink = document.createElement("buttom")
+     let butLink = document.createElement("button")
      butLink.id = "butLink";
      butLink.classList.add('btn','btn-outline-secondary');
      butLink.innerText = "baixar Imagem";
