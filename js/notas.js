@@ -63,7 +63,9 @@ function titCtg(){
 
     refApagar.orderByChild('ctg').equalTo(butCtg).on('child_added', snapshot =>{
         console.log(butCtg);
+
     adicionaNotaATela(snapshot.val(), snapshot.key);
+
     vl += parseFloat(snapshot.val().vlr);
 
     })
@@ -71,6 +73,7 @@ function titCtg(){
     setTimeout(function (){
        
         document.getElementById("result").innerText = `Valor total: ${vl.toFixed(2)} R$`;
+        
     }, 2000);
 
     return vl;
