@@ -253,13 +253,15 @@ function adicionaNotaATela(informacao, id) {
     /**
      * BOTÃO EXCLUIR
     */
-    var excluir = document.createElement("td");
-    excluir.classList.add('text-danger', 'fw-bold');
-    excluir.setAttribute('onclick', "deletar('" + id + "')");
-    excluir.setAttribute('type', "Submit");
-    excluir.innerText = "EXCLUIR"
-    divColapse.appendChild(excluir);
+
+    var ImgDel = document.createElement("img");
+    ImgDel.classList.add('img-fluid');
+    ImgDel.setAttribute('onclick', "deletar('" + id + "')");
+    ImgDel.setAttribute('src', "https://i.imgur.com/0llw5HV.png");
+    ImgDel.setAttribute('width', "40px");
+    divColapse.appendChild(ImgDel);
     //================
+
 
     nota.appendChild(tr);
     nota.appendChild(divColapse);
