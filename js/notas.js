@@ -49,6 +49,7 @@ function criarCard() {
     setTimeout(function (){
     
         document.getElementById("result").innerText = `Valor total: ${vl} R$`;
+
     }, 2000);
 
     return vl;
@@ -253,12 +254,12 @@ function adicionaNotaATela(informacao, id) {
     /**
      * BOTÃO EXCLUIR
     */
-    var excluir = document.createElement("td");
-    excluir.classList.add('text-danger', 'fw-bold');
-    excluir.setAttribute('onclick', "deletar('" + id + "')");
-    excluir.setAttribute('type', "Submit");
-    excluir.innerText = "EXCLUIR"
-    divColapse.appendChild(excluir);
+
+    let imgDel = document.createElement("img")
+    imgDel.classList.add('img-fluid')
+    imgDel.setAttribute('widht', "30px")
+    imgDel.setAttribute('src', "https://i.imgur.com/0llw5HV.png")
+    divColapse.appendChild(imgDel);
     //================
 
     nota.appendChild(tr);
