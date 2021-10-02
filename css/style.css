@@ -18,22 +18,19 @@
 	align-items: center;
 }
 
-/*** SVG responsive ***/
-
-#imgRelogio svg {
-	width: 30%;
-	height: 30%;
-}
-
 .card, button:hover{
 	animation-duration: 10s !important;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
-
-/*** End SVG responsive ***/
-
 #dateNumber {
 	margin-right: 200px;
+}
+#collapseWidthExample{
+	padding: 3rem 3rem;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
 }
 
 #date {

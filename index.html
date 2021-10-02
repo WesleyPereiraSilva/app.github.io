@@ -18,7 +18,7 @@
 
 <body class="modedark">
     <div id="preloader">
-      <div class="inner">
+      <div class="inner text-center">
         <!--PRELOADER! -->
         <!-- <div class="bolas">
             <div></div>
@@ -26,6 +26,7 @@
             <div></div>                 
         </div> -->
         <img src="https://i.imgur.com/dp1K7XY.gif" class="img-fluid ms-auto" alt="Imagem responsiva">
+        <img width="20%" src="https://i.imgur.com/djS6rTW.png" class="img-fluid ms-auto" alt="Imagem responsiva">
         <h5 id="preStatus"></h5>
       </div>
     </div>
@@ -43,13 +44,66 @@
     </symbol>
   </svg>
 
+  <div class="container-fluid">
+    <br>
+    <br>
+    <div class="text-center">
+      <!-- <img src="https://i.imgur.com/vo6kznp.gif" class="img-fluid ms-auto" alt="Imagem responsiva"> -->
+      <img width="50%" src="https://i.imgur.com/djS6rTW.png" class="img-fluid" alt="Imagem responsiva">
+    </div>
+
+    <p>
+        <img width="3%" src="https://i.imgur.com/fn4Ckub.png" class="img-fluid offset-md-4" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    </p>
+      <div class="collapse collapse-vertical index" id="collapseWidthExample">
+
+        <div id="facaLogin" class="text-center">
+
+          <div class="border rouded-4 bg-light">
+     
+            <BR>
+            
+
+            <p class="offset">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg>
+          </p>
+          <h2>FAÇA O SEU LOGIN</h2>
+            <br>
+            <br>
+            <form class="form-control text-center">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="nomeLogin" placeholder="nome">
+                  <label for="floatingInput"> Nome</label>
+                </div>
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                  <label for="floatingInput"> Email</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="senha" placeholder="senha" required>
+                  <label for="floatingInput">Senha</label>
+                </div>
+                <button type="button" class="btn btn-secondary" onclick="createLogin()">Criar Login</button>
+                <button type="button" class="btn btn-success" onclick="loginEmail()">Logar</button>
+                <button type="button" class="btn btn-danger" onclick="logout()">Deslogar</button>
+            </form>
+  
+          </div>
+
+  </div>
+  </div>
+
+
   <div class="container text-center">
 
     <!-- Img -->
     <div class="container-fluid">
-      <div id="imgInitial" class="text-center">
+      <!-- <div id="imgInitial" class="text-center">
         <img src="https://i.imgur.com/vo6kznp.gif" class="img-fluid ms-auto" alt="Imagem responsiva">
-      </div>
+      </div> -->
       <!-- End Img -->
 
       <!-- modedark js -->
@@ -156,52 +210,7 @@
 
       <div class="tab-pane fade text-center" id="nav-cliente" role="tabpanel" aria-labelledby="nav-cliente-tab">
 
-        <BR>
-        <BR>
-          
 
-        <p>
-          <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-            FAÇA SEU LOGIN
-          </button>
-        </p>
-        <div style="min-height: 120px;">
-          <div class="collapse collapse-vertical" id="collapseWidthExample">
-            <div class="card card-body">
-
-              
-              <div class="text-center col-md-6 border rouded-4 bg-light">
-         
-                <BR>
-                <h2>FAÇA O SEU LOGIN</h2>
-      
-                <img src="https://i.imgur.com/fn4Ckub.png" class="col-2 img-fluid">
-                <br>
-                <br>
-                <form class="form-control text-center">
-                    <div class="form-floating col-md-6 offset-md-3">
-                      <input type="text" class="form-control" id="nomeLogin" placeholder="nome">
-                      <label for="floatingInput"> Nome</label>
-                    </div>
-                    <div class="form-floating col-md-6 offset-md-3">
-                      <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                      <label for="floatingInput"> Email</label>
-                    </div>
-                    <div class="form-floating col-md-6 offset-md-3">
-                      <input type="password" class="form-control" id="senha" placeholder="senha" required>
-                      <label for="floatingInput">Senha</label>
-                    </div>
-                    <button type="button" class="btn btn-secondary" onclick="createLogin()">Criar Login</button>
-                    <button type="button" class="btn btn-success" onclick="loginEmail()">Logar</button>
-                    <button type="button" class="btn btn-danger" onclick="logout()">Deslogar</button>
-                </form>
-      
-              </div>
-
-
-            </div>
-          </div>
-        </div>
 
         <h2>Área do cliente</h2>
         <H4>Visualização da sua arte</H4>
