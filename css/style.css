@@ -18,6 +18,10 @@
 	align-items: center;
 }
 
+#apagarTab{
+	display: none;
+}
+
 .card, button:hover{
 	animation-duration: 10s !important;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);

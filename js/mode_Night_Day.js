@@ -66,7 +66,7 @@ function loginEmail() {
 
         firebase.auth().signInWithEmailAndPassword(email, senha).then(() => {
 
-            
+
     
             setTimeout(function () {
                 window.location.reload();
@@ -100,12 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     firebase.auth().onAuthStateChanged((usuario) => {
         if (usuario) {
-
          
             document.getElementById("statusUserLogin").innerText = "Seja Bem Vindo";
             document.getElementById("userLogin1").innerText = usuario.email;
-
-
 
         } else {
            
