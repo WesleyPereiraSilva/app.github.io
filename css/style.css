@@ -30,7 +30,7 @@
 	margin-right: 200px;
 }
 #collapseWidthExample{
-	padding: 3rem 3rem;
+	padding: 0rem 3rem;
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -72,9 +72,6 @@ button {
 	transition: 2s;
 	transition-delay: 1s;
 }
-/* .card{
-	flex-direction: row !important;
-} */
 
 
 /*** End Buttons ***/
@@ -87,6 +84,10 @@ button {
 
 @media only screen and (max-width: 1024px) {
 	/* For desktop: */
+	#facaLogin{
+		width:20%;
+	}
+
 	.col-1 {
 		width: 8.33%;
 	}
@@ -177,6 +178,9 @@ button {
 
 @media only screen and (max-width: 600px) {
 	/* for tablets */
+	#butLogin{
+		width:10% !important;
+	}
 	.col-1 {
 		width: 8.33%;
 	}
@@ -225,6 +229,9 @@ button {
 
 @media only screen and (max-width: 360px) {
 	/* for tablets */
+	#butLogin{
+		width:10% !important;
+	}
 	.col-1 {
 		width: 8.33%;
 	}
