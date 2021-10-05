@@ -45,47 +45,44 @@
   </svg>
 
   <div class="container-fluid">
-    <br>
-    <br>
-    <div class="text-center">
-      <!-- <img src="https://i.imgur.com/vo6kznp.gif" class="img-fluid ms-auto" alt="Imagem responsiva"> -->
-      <img width="50%" src="https://i.imgur.com/djS6rTW.png" class="img-fluid" alt="Imagem responsiva">
-    </div>
-
-    <p>
-        <img id="butLogin" width="3%" src="https://i.imgur.com/fn4Ckub.png" class="img-fluid offset-md-4" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-        <span class="fw-bold font-monospace text-muted">Login</span>
-    </p>
+ 
+      <div id="barraPrincipal" class="text-center align-content-center">
+        <br>
+        <br>
+        <img width="50%" src="https://i.imgur.com/djS6rTW.png" class="img-fluid" alt="Imagem responsiva"><br><br>
+        <span>
+          <img id="butLogin" width="3%" src="https://i.imgur.com/Tp4P5Dv.png" class="img-fluid offset-md-4" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        </span>&nbsp;&nbsp;
+        <span>
+          <img id="butLogin" width="3%" src="https://i.imgur.com/LeivtsT.png" class="img-fluid" onclick="logout()" alt="">
+        </span>
+        <br>
+        <br>
+      </div>
+  </div>
       <div class="collapse collapse-vertical index" id="collapseWidthExample">
 
         <div class="text-center">
 
           <div class="border rouded-4 bg-light">            
-
-            <p class="offset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-              </svg>
-              
-          </p>
-            <form class="form-control text-center">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="nomeLogin" placeholder="nome">
-                  <label for="floatingInput"> Nome</label>
-                </div>
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                  <label for="floatingInput"> Email</label>
-                </div>
-                <div class="form-floating">
-                  <input type="password" class="form-control" id="senha" placeholder="senha" required>
-                  <label for="floatingInput">Senha</label>
-                </div>
-                <button type="button" class="btn btn-secondary" onclick="createLogin()">Criar Login</button>
-                <button type="button" class="btn btn-success" onclick="loginEmail()">Logar</button>
-                <button type="button" class="btn btn-danger" onclick="logout()">Deslogar</button>
-            </form>
+     
+              <form class="form-control text-center">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="nomeLogin" placeholder="nome">
+                    <label class="fw-bold font-monospace text-muted" for="floatingInput"> Nome</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    <label class="fw-bold font-monospace text-muted" for="floatingInput"> Email</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="senha" placeholder="senha" required>
+                    <label class="fw-bold font-monospace text-muted" for="floatingInput">Senha</label>
+                  </div>
+                  <span type="button" class="text-secondary fw-bold font-monospace" onclick="createLogin()">CriarLogin</span>&nbsp;&nbsp;&nbsp;
+                  <span type="button" class="text-success fw-bold font-monospace" onclick="loginEmail()">Logar</span>&nbsp;&nbsp;
+              </form>
+              <span class="fw-bold font-monospace text-muted" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Sair</span>
   
           </div>
 

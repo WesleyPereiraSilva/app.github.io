@@ -16,10 +16,20 @@
 * {
 	/* border: 1px solid red; */
 	align-items: center;
+	
 }
 
-#apagarTab{
-	display: none;
+.btn{
+	padding: 0px !important;
+}
+
+.container-fluid{
+	padding: 0px !important;
+}
+
+#barraPrincipal{
+	background-color: rgb(241, 241, 241);
+	padding: 0px 0px !important;
 }
 
 .card, button:hover{
