@@ -63,6 +63,9 @@
     align-items: baseline !important;
 } */
 
+#barraPrincipal{
+	background-color: rgb(60, 60, 60) !important;
+}
 
 #tabs {
 	margin-top: 10px;
@@ -240,7 +243,7 @@ button {
 @media only screen and (max-width: 360px) {
 	/* for tablets */
 	#butLogin{
-		width:10% !important;
+		width:20% !important;
 	}
 	.col-1 {
 		width: 8.33%;
