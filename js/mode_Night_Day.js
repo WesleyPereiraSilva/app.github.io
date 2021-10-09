@@ -463,6 +463,8 @@ function addClienteATela(informacao, id) {
     img.setAttribute('src', "" + informacao.imgScr + "");
     img.classList.add('img-fluid', 'ms-auto');
     div_col_sm.appendChild(img);
+
+
     // ===========================
     /**
      * div paragrafo descrição da imagem
