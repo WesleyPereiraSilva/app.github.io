@@ -20,36 +20,38 @@ var refLogin = firebase.database().ref('Users');
 
 
 function createLogin() {
-    var nome1 = document.getElementById("nomeLogin").value;
-    var email = document.getElementById("email").value;
-    var senha = document.getElementById("senha").value;
+    var nome5 = document.getElementById("nomeLogin").value;
+    var email5 = document.getElementById("email").value;
+    var senha5= document.getElementById("senha").value;
 
     var login = {
-        nomeVl: nome1,
-        emailVl: email,
-        senhaVl: senha
+        nomeVl: nome5,
+        emailVl: email5,
+        senhaVl: senha5
     }
 
-    if(email == "" || senha == ""){
+    if(email5 == "" || senha5 == "" || nome5 == ""){
 
         alert("Preencha o campo vazio!");
 
     }else{
 
         refLogin.push(login).then(snapshot => {
-            // addCardATela(value.val(), value.key);
+            // addCardATela(value.val(), value.key);  
+        firebase.auth().createUserWithEmailAndPassword(email5, senha5).then(user => {
     
-        })
-    
-    
-        firebase.auth().createUserWithEmailAndPassword(email, senha).then(user => {
-    
-            
+            setTimeout(function () {
+                window.location.reload();
+            }, 800);
     
         }).catch(err => {
             console.log('error', error);
         });
 
+    
+        });
+    
+ 
     }  
 
 }
