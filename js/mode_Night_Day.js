@@ -304,6 +304,13 @@ document.addEventListener("DOMContentLoaded", function () {
         areaTab(snapshot.val());
     });
 
+    //videos
+
+    refClienteWesleyVd.orderByChild('ÁreaCliente/CelinaVideo').on('child_added', snapshot => {
+        console.log();
+        addClienteVideo(snapshot.val());
+    });
+
    
 
 });
@@ -434,7 +441,7 @@ function addOrcamento(informacao) {
 
 // ÁREA DO CLIENTE
 
-
+var refClienteWesleyVd = firebase.database().ref('ÁreaCliente/CelinaVideo');
 var refClienteWesley = firebase.database().ref('ÁreaCliente/Celina');
 var refClientePedro = firebase.database().ref('ÁreaCliente/Pedro');
 refClienteEmyle = firebase.database().ref('ÁreaCliente/Emyle');
@@ -516,6 +523,40 @@ function addClienteATela(informacao, id) {
 
 }
 var getCliente = document.getElementById('areaCliente');
+
+
+function addClienteVideo(informacao) {
+
+    let cardVd = document.createElement("div");
+    cardVd.id = "video";
+    cardVd.classList.add('card');
+    cardVd.classList.add('col-4');
+
+
+    let iframe = document.createElement("iframe");
+    iframe.setAttribute('src', ""+informacao.urlVd+"");
+    iframe.setAttribute('width', ""+informacao.larg+"");
+    iframe.setAttribute('heigth', ""+informacao.alt+"");
+    iframe.setAttribute('title', "YouTube video player");
+    iframe.setAttribute('frameborder', "0");
+    iframe.setAttribute('allow', "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    iframe.setAttribute('allowfullscreen', "yes");
+    cardVd.appendChild(iframe);
+
+    let cardBody = document.createElement("div");
+    cardBody.classList.add('card-body');
+    cardVd.appendChild(cardBody);
+
+    let parag = document.createElement("p");
+    parag.classList.add('text-center');
+    parag.innerText = informacao.dscVd;
+    cardBody.appendChild(parag);
+
+    getClienteVd.appendChild(cardVd);
+
+}
+
+var getClienteVd = document.getElementById('areaClienteVideo');
 
 
 // MENU COMPROMISSOS
