@@ -547,10 +547,18 @@ function addClienteVideo(informacao) {
     cardBody.classList.add('card-body');
     cardVd.appendChild(cardBody);
 
-    let parag = document.createElement("p");
-    parag.classList.add('text-center');
-    parag.innerText = informacao.dscVd;
-    cardBody.appendChild(parag);
+    
+    let div_link = document.createElement("a");
+     div_link.setAttribute('href', ""+informacao.linkVd+"");
+     div_link.setAttribute('target', "_blank");
+     cardBody.appendChild(div_link);
+
+     let butLink = document.createElement("button")
+     butLink.id = "butLink";
+     butLink.classList.add('btn','btn-outline-secondary');
+     butLink.innerText = "Baixar Video";
+     div_link.appendChild(butLink);
+
 
     getClienteVd.appendChild(cardVd);
 
