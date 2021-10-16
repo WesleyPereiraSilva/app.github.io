@@ -285,17 +285,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     refClienteWesley.orderByChild('ÁreaCliente/Celina').on('child_added', snapshot => {
         console.log();
-        addClienteATela(snapshot.val());
+        addClienteATela(snapshot.val(), snapshot.key);
     });
 
     refClientePedro.orderByChild('ÁreaCliente/Pedro').on('child_added', snapshot => {
         console.log();
-        addClienteATela(snapshot.val());
+        addClienteATela(snapshot.val(), snapshot.key);
     });
 
     refClienteEmyle.orderByChild('ÁreaCliente/Emyle').on('child_added', snapshot => {
         console.log();
-        addClienteATela(snapshot.val());
+        addClienteATela(snapshot.val(), snapshot.key);
     });
 
     tabMenu.orderByChild('Menu/Compromissos').on('child_added', snapshot => {
@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     refClienteWesleyVd.orderByChild('ÁreaCliente/CelinaVideo').on('child_added', snapshot => {
         console.log();
-        addClienteVideo(snapshot.val());
+        addClienteVideo(snapshot.val(), snapshot.key);
     });
 
    
@@ -471,6 +471,7 @@ function addClienteATela(informacao, id) {
     let img = document.createElement("img");
     img.setAttribute('src', "" + informacao.imgScr + "");
     img.classList.add('img-fluid', 'ms-auto');
+    img.classList.add("rounded-3");
     div_col_sm.appendChild(img);
 
 
@@ -525,22 +526,26 @@ function addClienteATela(informacao, id) {
 var getCliente = document.getElementById('areaCliente');
 
 
-function addClienteVideo(informacao) {
+function addClienteVideo(informacao, id) {
 
     let cardVd = document.createElement("div");
-    cardVd.id = "video";
+    cardVd.id = id;
     cardVd.classList.add('card');
     cardVd.classList.add('col-4');
 
+    let br = document.createElement("br");
+    cardVd.appendChild(br);
 
     let iframe = document.createElement("iframe");
+    iframe.classList.add("rounded-3");
     iframe.setAttribute('src', ""+informacao.urlVd+"");
     iframe.setAttribute('width', ""+informacao.larg+"");
     iframe.setAttribute('heigth', ""+informacao.alt+"");
     iframe.setAttribute('title', "YouTube video player");
     iframe.setAttribute('frameborder', "0");
-    iframe.setAttribute('allow', "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    iframe.setAttribute('allow', "accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture");
     iframe.setAttribute('allowfullscreen', "yes");
+    iframe.setAttribute('controlslist', "download");
     cardVd.appendChild(iframe);
 
     let cardBody = document.createElement("div");
