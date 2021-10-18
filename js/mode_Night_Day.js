@@ -283,6 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
         addOrcamento(snapshot.val());
     });
 
+    // clientes artes
     refClienteWesley.orderByChild('ÁreaCliente/Celina').on('child_added', snapshot => {
         console.log();
         addClienteATela(snapshot.val(), snapshot.key);
@@ -298,13 +299,18 @@ document.addEventListener("DOMContentLoaded", function () {
         addClienteATela(snapshot.val(), snapshot.key);
     });
 
+    refClienteWesleySv.orderByChild('ÁreaCliente/Silviane').on('child_added', snapshot => {
+        console.log();
+        addClienteATela(snapshot.val(), snapshot.key);
+    });
+
     tabMenu.orderByChild('Menu/Compromissos').on('child_added', snapshot => {
         console.log();
         menuTab(snapshot.val());
         areaTab(snapshot.val());
     });
 
-    //videos
+    //Clientes videos
 
     refClienteWesleyVd.orderByChild('ÁreaCliente/CelinaVideo').on('child_added', snapshot => {
         console.log();
@@ -314,6 +320,12 @@ document.addEventListener("DOMContentLoaded", function () {
    
 
 });
+
+var refClienteWesleyVd = firebase.database().ref('ÁreaCliente/CelinaVideo');
+var refClienteWesley = firebase.database().ref('ÁreaCliente/Celina');
+var refClienteWesleySv = firebase.database().ref('ÁreaCliente/Silviane');
+var refClientePedro = firebase.database().ref('ÁreaCliente/Pedro');
+refClienteEmyle = firebase.database().ref('ÁreaCliente/Emyle');
 
 
 function addCaricaturATela(informacao, id) {
@@ -441,10 +453,6 @@ function addOrcamento(informacao) {
 
 // ÁREA DO CLIENTE
 
-var refClienteWesleyVd = firebase.database().ref('ÁreaCliente/CelinaVideo');
-var refClienteWesley = firebase.database().ref('ÁreaCliente/Celina');
-var refClientePedro = firebase.database().ref('ÁreaCliente/Pedro');
-refClienteEmyle = firebase.database().ref('ÁreaCliente/Emyle');
 
 function addClienteATela(informacao, id) {
 
