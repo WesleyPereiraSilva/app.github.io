@@ -549,12 +549,13 @@ function addClienteVideo(informacao, id) {
     iframe.setAttribute('src', ""+informacao.urlVd+"");
     iframe.setAttribute('width', ""+informacao.larg+"");
     iframe.setAttribute('heigth', ""+informacao.alt+"");
-    iframe.setAttribute('title', "YouTube video player");
     iframe.setAttribute('frameborder', "0");
-    iframe.setAttribute('allow', "accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture");
+    iframe.setAttribute('allow', "autoplay; gyroscope; picture-in-picture");
     iframe.setAttribute('allowfullscreen', "yes");
     iframe.setAttribute('controlslist', "download");
     cardVd.appendChild(iframe);
+
+    // <iframe src="https://drive.google.com/file/d/1gV17fwt2MT9K6uqIpeL0xfM3Sktqwrg0/preview" width="1280" height="720" allow="autoplay" controlslist="download" allowfullscreen="yes"></iframe>
 
     let cardBody = document.createElement("div");
     cardBody.classList.add('card-body');
