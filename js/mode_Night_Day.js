@@ -23,6 +23,9 @@ function loginGoogle() {
     firebase.auth().signInWithPopup(provider).then(()=>{
         console.log('usuario', resposta.user);
         console.log('token', resposta.credetial.acessToken);
+        setTimeout(function () {
+            window.location.reload();
+        }, 800);
     }).catch(erro =>{
         console.log('erro', erro);
     });
