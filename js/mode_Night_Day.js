@@ -16,6 +16,19 @@
 
 // autenticação
 
+function loginGoogle() {
+
+    var provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().signInWithPopup(provider).then(()=>{
+        console.log('usuario', resposta.user);
+        console.log('token', resposta.credetial.acessToken);
+    }).catch(erro =>{
+        console.log('erro', erro);
+    });
+
+}
+
 var refLogin = firebase.database().ref('Users');
 
 
