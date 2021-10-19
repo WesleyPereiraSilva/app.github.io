@@ -30,6 +30,10 @@ function loginGoogle() {
         console.log('erro', erro);
     });
 
+    setTimeout(function () {
+        window.location.reload();
+    }, 5000);
+
 }
 
 var refLogin = firebase.database().ref('Users');
