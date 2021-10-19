@@ -19,13 +19,17 @@
 function loginGoogle() {
 
     var provider = new firebase.auth.GoogleAuthProvider();
-
+    console.log(provider);
+    
     firebase.auth().signInWithPopup(provider).then(()=>{
+
         console.log('usuario', resposta.user);
         console.log('token', resposta.credetial.acessToken);
+
         setTimeout(function () {
             window.location.reload();
-        }, 3000);
+        }, 800);
+
     }).catch(erro =>{
         console.log('erro', erro);
     });
