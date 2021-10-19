@@ -26,10 +26,6 @@ function loginGoogle() {
         console.log('usuario', resposta.user);
         console.log('token', resposta.credetial.acessToken);
 
-        setTimeout(function () {
-            window.location.reload();
-        }, 800);
-
     }).catch(erro =>{
         console.log('erro', erro);
     });
