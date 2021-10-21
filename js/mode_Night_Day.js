@@ -88,8 +88,6 @@ function loginEmail() {
 
         firebase.auth().signInWithEmailAndPassword(email, senha).then(() => {
 
-
-    
             setTimeout(function () {
                 window.location.reload();
             }, 800);
@@ -101,8 +99,6 @@ function loginEmail() {
         });
         
     }
-
-    
 
 }
 
@@ -135,16 +131,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
+    var el = document.getElementsByClassName("firebaseui-id-submit");
+    el.addEventListener("click",() =>{
+  
+      setTimeout(function () {
+          location.reload();
+      }, 800);
+  
+    });
 
 });
 
-function reload(){
+// function reload(){
 
-    setTimeout(function () {
-        location.reload();
-    }, 800);
+//     var el = document.getElementsByClassName("firebaseui-id-submit");
+//   el.addEventListener("click",() =>{
 
-}
+//     setTimeout(function () {
+//         location.reload();
+//     }, 800);
+
+//   });
+
+// }
 
 /**
  * Listener de dom ready
