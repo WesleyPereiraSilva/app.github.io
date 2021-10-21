@@ -153,7 +153,6 @@ function reload(){
     var config = {
         callbacks : {
             singInSuccessWithAutResult: function(authResult){
-                console.log(authResult)
 
                 console.log('authResult', authResult)
                 return false;
