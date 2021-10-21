@@ -149,8 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
             singInSuccessWithAutResult: function(authResult){
                 console.log('authResult', authResult)
 
-                reload();
-
                 return true;
 
             }
