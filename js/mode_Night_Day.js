@@ -146,8 +146,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // configurações do firebaseui
     var config = {
         callbacks : {
-            singInSuccessWithAutResult: function(authResult,"https://wesleyapp-e4970.web.app"){
+            singInSuccessWithAutResult: function(authResult){
                 console.log('authResult', authResult)
+                location.reload();
 
                 return true;
 
