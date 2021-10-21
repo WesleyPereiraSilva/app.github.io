@@ -148,6 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
         callbacks : {
             singInSuccessWithAutResult: function(authResult){
                 console.log('authResult', authResult)
+
+                location.reload();
                 return false;
 
             }
