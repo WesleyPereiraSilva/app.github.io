@@ -146,10 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // configurações do firebaseui
     var config = {
         callbacks : {
-            singInSuccessWithAutResult: function(authResult){
+            singInSuccessWithAutResult: function(authResult,"https://wesleyapp-e4970.web.app"){
                 console.log('authResult', authResult)
 
-                return false;
+                return true;
 
             }
         },
