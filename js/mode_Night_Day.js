@@ -132,13 +132,14 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     var el = document.getElementsByClassName("firebaseui-id-submit");
-    el.addEventListener("click",() =>{
-  
-      setTimeout(function () {
-          location.reload();
-      }, 800);
-  
-    });
+    
+    el.addEventListener("click",function () {
+
+            setTimeout(function () {
+                location.reload();
+            }, 800);
+
+        });
 
 });
 
