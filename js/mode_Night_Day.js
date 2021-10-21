@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var config = {
         callbacks : {
             singInSuccessWithAutResult: function(authResult){
-                
+
                 setTimeout(() => {
                     location.reload();
                 }, 800);
@@ -160,9 +160,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         },
         signInOptions: [
-             firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            //  firebase.auth.EmailAuthProvider.PROVIDER_ID,
             //  firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+            //  firebase.auth.GoogleAuthProvider.PROVIDER_ID,
             //  firebase.auth.GithubAuthProvider.PROVIDER_ID,
              {
                  provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
