@@ -138,6 +138,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+function reload(){
+
+    setTimeout(function () {
+        location.reload();
+    }, 800);
+
+}
+
 /**
  * Listener de dom ready
  */
@@ -149,10 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var config = {
         callbacks : {
             singInSuccessWithAutResult: function(authResult){
-
-                setTimeout(() => {
-                    location.reload();
-                }, 800);
+                console.log(authResult)
 
                 console.log('authResult', authResult)
                 return false;
