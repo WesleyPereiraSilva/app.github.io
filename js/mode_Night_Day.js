@@ -115,6 +115,8 @@ function logout() {
             location.reload();
         }, 800);
 
+
+
     });
 };
 
@@ -147,11 +149,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var config = {
         callbacks : {
             singInSuccessWithAutResult: function(authResult){
+                
+                setTimeout(() => {
+                    location.reload();
+                }, 800);
+
                 console.log('authResult', authResult)
-
-                location.reload();
                 return false;
-
+                
             }
         },
         signInOptions: [
@@ -165,10 +170,12 @@ document.addEventListener("DOMContentLoaded", function () {
              }
         ],
         signInFlow: 'popup'
+
     };
 
     //inicializa o firebase UI
     ui.start('#firebaseui-auth', config);
+
 
  });
 
