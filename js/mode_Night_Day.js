@@ -367,6 +367,11 @@ document.addEventListener("DOMContentLoaded", function () {
         addClienteATela(snapshot.val(), snapshot.key);
     });
 
+    refClienteCvLuxx.orderByChild('ÁreaCliente/CurvasDeLuxxo').on('child_added', snapshot => {
+        console.log();
+        addClienteATela(snapshot.val(), snapshot.key);
+    });
+
     tabMenu.orderByChild('Menu/Compromissos').on('child_added', snapshot => {
         console.log();
         menuTab(snapshot.val());
@@ -387,6 +392,7 @@ document.addEventListener("DOMContentLoaded", function () {
 var refClienteWesleyVd = firebase.database().ref('ÁreaCliente/CelinaVideo');
 var refClienteWesley = firebase.database().ref('ÁreaCliente/Celina');
 var refClienteWesleySv = firebase.database().ref('ÁreaCliente/Silviane');
+var refClienteCvLuxx = firebase.database().ref('ÁreaCliente/CurvasDeLuxxo');
 var refClientePedro = firebase.database().ref('ÁreaCliente/Pedro');
 refClienteEmyle = firebase.database().ref('ÁreaCliente/Emyle');
 
