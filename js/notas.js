@@ -940,8 +940,6 @@ var question = firebase.database().ref('Questionario');
 
 function creatPerg(){
 
-    
-
 
         var pergInp = document.getElementById("userLogin1");
         var perg01Inp = document.getElementById("pergunta01");

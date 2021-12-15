@@ -74,6 +74,10 @@ function createLogin() {
  
     }  
 
+    setTimeout(function () {
+        window.location.reload();
+    }, 3000);
+
 }
 
 function loginEmail() {
