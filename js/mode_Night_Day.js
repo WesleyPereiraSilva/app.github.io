@@ -294,7 +294,7 @@ function addHomeItem(informacao) {
     let br1 = document.createElement("br");
     homeItem.appendChild(br1);
 
-    let h2 = document.createElement("h2");
+    let h2 = document.createElement("h4");
     h2.innerText = informacao.tit1;
     div.appendChild(h2);
 
@@ -320,7 +320,7 @@ function addHomeItem(informacao) {
     col8.classList.add('col-8');
     row.appendChild(col8);
 
-    let p = document.createElement("h5");
+    let p = document.createElement("h6");
     p.classList.add('text-center');
     p.innerText = informacao.dsc;
     col8.appendChild(p);
